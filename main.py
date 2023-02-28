@@ -22,8 +22,10 @@ print("Введите элементы матрицы A: ", end='\n')
 for i in range(dimension):
     k = list(map(int, input().split()))
     A[i] = k
+
 if np.linalg.det(A) != 0:
     flag = 1
+
 print('')
 print("Введите элементы вектора B: ", end='\n')
 B = np.ones((dimension, 1))  # Вектор B
